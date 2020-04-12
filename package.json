@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "NODE_ENV=development nodemon server.js",
-    "start:prod": "NODE_ENV=production nodemon server.js"
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "debug": "ndb server.js"
   },
   "author": "Andrew Kozinsky",
   "license": "ISC",
@@ -15,9 +16,14 @@
     "env": "0.0.2",
     "express": "^4.17.1",
     "mongoose": "^5.9.7",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "slugify": "^1.4.0",
+    "validator": "^13.0.0"
   },
   "engines": {
     "node": ">=10.0.0"
+  },
+  "devDependencies": {
+    "ndb": "^1.1.5"
   }
 }
